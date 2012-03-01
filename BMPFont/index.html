@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html lang="ja"><!--<![endif]-->
+<head>
+<head id="args-in" data-template-set="html5-reset">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="title" content="">
+<meta name="author" content="Hiroto Sugita">
+<title>BMPFont</title>
+<link rel="stylesheet" type="text/css" href="http://args.in/_/css/styles.css" media="all" />
+<script type="text/javascript" src="http://args.in/_/js/jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="http://args.in/_/js/modernizr-1.7.min.js"></script>
+<script type="text/javascript" src="http://args.in/_/js/common.js"></script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-26080640-4']);_gaq.push(['_trackPageview']);(function(){ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script>
+<script src='BMPFont.js'></script>
+<script src='test.js'></script>
+</head>
+<body>
+<header class="gh">
+	<hgroup>
+		<h1>BMPFont</h1>
+		<h2>Javascript library that convert the raw html text to Bitmap Font by <i>Canvas</i>.</h3>
+		<h3>Canvasを使ってテキストをビットマップフォント風に変換するJavascriptライブラリ。</h3>
+	</hgroup>
+</header>
+<div id="bmpf">
+	<nav class="cntrl">
+		<a href="javascript:void" class="btn" id="toggle">OFF</a>
+	</nav>
+	<div class="clr spc20">
+		<div class="lft">
+			<textarea id="ta0">The quick brown fox jumps over a lazy dog.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum, sapien ut commodo lacinia, lorem risus hendrerit nisl, et ultricies lacus ipsum sit amet libero.</textarea>
+			<select id="sa0">
+				<option disabled>ALIGN</option>
+				<option selected>left</option>
+				<option>right</option>
+			</select>
+			<select id="ss0">
+				<option disabled>SCALE</option>
+				<option selected>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+			<select id="lis0">
+				<option disabled>LINE SPACING</option>
+				<option>0</option>
+				<option selected>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+			<select id="les0">
+				<option disabled>LETTER SPACING</option>
+				<option selected>0</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+		</div>
+		<div class="rgt">
+			<div id='t0'></div>
+		</div>
+	</div>
+	<div class="clr spc20">
+		<div class="lft">
+			<textarea id="ta1">The quick brown fox jumps over a lazy dog.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum, sapien ut commodo lacinia, lorem risus hendrerit nisl, et ultricies lacus ipsum sit amet libero.</textarea>
+			<select id="sa1">
+				<option disabled>ALIGN</option>
+				<option selected>left</option>
+				<option>right</option>
+			</select>
+			<select id="ss1">
+				<option disabled>SCALE</option>
+				<option selected>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+			<select id="lis1">
+				<option disabled>LINE SPACING</option>
+				<option>0</option>
+				<option selected>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+			<select id="les1">
+				<option disabled>LETTER SPACING</option>
+				<option selected>0</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+		</div>
+		<div class="rgt">
+			<div id='t1'></div>
+		</div>
+	</div>
+</div>
+<nav id="social">
+	<ul class="clr">
+		<li><a href="http://twitter.com/#!/abakane" class="twitter-share-button" title="Twitter"><img src="http://args.in/_/images/btn_c_01_.png" width="44" height="44" alt="Twitter" title="Twitter" class="ro" /></a></li>
+		<li><a href="http://www.facebook.com/hiroto.sugita" title="Facebook"><img src="http://args.in/_/images/btn_c_02_.png" width="44" height="44" alt="Facebook" title="Facebook" class="ro" /></a></li>
+		<li><a href="http://gplus.to/abakane" title="Google+"><img src="http://args.in/_/images/btn_c_03_.png" width="44" height="44" alt="Google+" title="Google+" class="ro" /></a></li>
+		<li><a href="http://www.flickr.com/photos/abakane/" title="Flickr"><img src="http://args.in/_/images/btn_c_04_.png" width="44" height="44" alt="Flickr" title="Flickr" class="ro" /></a></li>
+		<li><a href="http://s.args.in" title="Tumblr"><img src="http://args.in/_/images/btn_c_05_.png" width="44" height="44" alt="Tumblr" title="Tumblr" class="ro" /></a></li>
+		<li><a href="http://pinterest.com/abakane/" title="Pinterest"><img src="http://args.in/_/images/btn_c_06_.png" width="44" height="44" alt="Pinterest" title="Pinterest" class="ro" /></a></li>
+	</ul>
+</nav>
+<footer class="all"><p>&copy;2012 args.in All Rights Reserved.</p></footer>
+<a href="https://github.com/abakane/BMPFont"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+</body>
+</html>
