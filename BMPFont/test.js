@@ -8,10 +8,10 @@ $(function() {
 	$('#toggle').click(function(){
 		if( !isOn )
 		{
-			$(this).text( 'ON'); isOn=true;
+			$(this).text( 'OFF'); isOn=true;
 			draw();
 		}else{
-			$(this).text( 'OFF'); isOn=false;
+			$(this).text( 'ON'); isOn=false;
 			clear();
 		}
 		
